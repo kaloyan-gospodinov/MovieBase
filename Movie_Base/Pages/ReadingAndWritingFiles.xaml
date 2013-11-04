@@ -1,0 +1,24 @@
+﻿<common:LayoutAwarePage
+    x:Class="Movie_Base.Pages.ReadingAndWritingFiles"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Movie_Base.Pages"
+    xmlns:common="using:Movie_Base.Common"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <StackPanel Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
+        <Grid>
+            <Button x:Name="backButton" Click="GoBack" IsEnabled="{Binding Frame.CanGoBack, ElementName=PageRoot}" Style="{StaticResource BackButtonStyle}" Margin="39,0,0,10" RenderTransformOrigin="0.083,1.792"/>
+            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Read and Write to Text Files" Style="{StaticResource PageHeaderTextStyle}" Margin="120,60,0,20"/>
+        </Grid>
+        <TextBox x:Name="FileContents" FontSize="20" TextWrapping="Wrap"  BorderBrush="{StaticResource ApplicationPageBackgroundThemeBrush}" Background="{StaticResource ApplicationPageBackgroundThemeBrush}" Foreground="{StaticResource ApplicationForegroundThemeBrush}" Margin="122,100,0,0" Height="122"/>
+        <TextBox x:Name="TextInput" Text="Write your text here" Margin="122,0,0,0" Height="106" TextWrapping="Wrap"/>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Margin="122,0,0,0" Width="681">
+            <Button Click="OpenFileClick"  Style="{StaticResource OpenFileAppBarButtonStyle}" x:Name="OpenFile"/>
+            <Button Click="WriteToFileClick" Style="{StaticResource EditAppBarButtonStyle}" x:Name="WriteToFile"/>
+            <CheckBox x:Name="OverwriteCheckBox" Content="Overwrite contents"/>
+        </StackPanel>
+    </StackPanel>
+</common:LayoutAwarePage>

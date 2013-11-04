@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest">
+  <Identity Name="7544KaloyanGospodinov.MovieBase" Publisher="CN=052A98C3-41C0-4FD3-8C06-59154901C8F6" Version="1.0.0.4" />
+  <Properties>
+    <DisplayName>Movie Base</DisplayName>
+    <PublisherDisplayName>Kaloyan Gospodinov</PublisherDisplayName>
+    <Logo>Assets\StoreLogo.png</Logo>
+  </Properties>
+  <Prerequisites>
+    <OSMinVersion>6.2.1</OSMinVersion>
+    <OSMaxVersionTested>6.2.1</OSMaxVersionTested>
+  </Prerequisites>
+  <Resources>
+    <Resource Language="x-generate" />
+  </Resources>
+  <Applications>
+    <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="Movie_Base.App">
+      <VisualElements DisplayName="Movie Base" Logo="Assets\Logo.png" SmallLogo="Assets\SmallLogo.png" Description="Movie_Base" ForegroundText="light" BackgroundColor="#000000">
+        <DefaultTile ShowName="allLogos" />
+        <SplashScreen Image="Assets\SplashScreen.png" />
+      </VisualElements>
+    </Application>
+  </Applications>
+  <Capabilities>
+    <Capability Name="internetClient" />
+  </Capabilities>
+</Package>

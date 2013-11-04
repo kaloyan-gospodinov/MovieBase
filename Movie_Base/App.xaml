@@ -1,0 +1,23 @@
+﻿<Application
+    x:Class="Movie_Base.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Movie_Base">
+
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+
+                <!-- 
+                    Styles that define common aspects of the platform look and feel
+                    Required by Visual Studio project and item templates
+                 -->
+                <ResourceDictionary Source="Common/StandardStyles.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+            <!-- Application-specific resources -->
+
+            <x:String x:Key="AppName">Movie Base</x:String>
+            <x:String x:Key="BingCredentials">Ar-bS7BcZ2MxBdOF55JvYd6BGEkUcYiz3_RAdFvXXEQ1FvAO7uUi6oM4ZtqYnDJ0</x:String>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
